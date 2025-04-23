@@ -1125,21 +1125,16 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 /* Adjust dropdown-menu to take up space */
 .dropdown-menu {
-    display: block; /* Keep in document flow */
+    display: block;
     height: 0;
     overflow: hidden;
     background-color: #f8f9fa;
-    transition: height 0.4s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0;
+    transition: height 0.4s ease-in-out;
     padding: 0;
-    position: static !important; /* Override Bootstrap absolute positioning */
+    position: static !important;
 }
 
-
-/* Show state */
-.dropdown-menu.show {
-    opacity: 1;
-    transform: translateY(0);
+.dropdown-menu .p-3 {
     padding: 15px;
 }
 
@@ -1200,3 +1195,103 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     from { opacity: 1; }
     to { opacity: 0; }
 }
+
+/* certiciations seciton */
+
+/* .cert-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border: 1px solid #eee; 
+    padding: 24px;
+    border-radius: 12px;
+    max-width: 800px;
+    font-family: sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cert-icon {
+    flex-shrink: 0;
+    height: auto;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cert-icon img {
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .cert-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cert-title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .cert-meta {
+    font-size: 1rem;
+    justify-content: space-between;
+    text-align: center;
+    gap: 24px;
+  } */
+
+  .cert-icon img {
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .cert-title {
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .custom-credential-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 2px solid #ccc;
+    border-radius: 9999px; /* pill-shaped */
+    
+    background-color: transparent;
+    text-decoration: none;
+    transition: none;
+  }
+
+  .custom-credential-btn:hover {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 2px solid #ccc;
+    border-radius: 9999px; /* pill-shaped */
+    color: white;
+    background-color: #4287f5;
+    text-decoration: none;
+    transition: none;
+  }
+
+  .custom-credential-btn i {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+
+  .paperlink:hover {
+    color: #4287f5;
+  }
+
+  .dropdown-menu a {
+    pointer-events: auto;
+  }
