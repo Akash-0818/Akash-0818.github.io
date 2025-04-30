@@ -205,7 +205,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4287f5;}
     /* background-color: #1b56b5; */
     background-size:cover;
     background-position: center;
-    height:890px;
+    height:760px;
 }
 .welcome-hero:before{
     position:absolute;
@@ -383,9 +383,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*-------------------------------------
         6.  Skills
 --------------------------------------*/
-.skills {
-    
-}
+
 .skill-content{padding: 50px 0 80px;}
 .single-skill-content{padding-top: 100px;}
 .section-heading h2 {
@@ -717,9 +715,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     padding: 50px 0 100px;
 }
 
-.contact-add-head {
 
-}
 .single-contact-box {
     padding-top: 100px;
     color: red;
@@ -816,9 +812,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*.contact-add-info */
 
 /*hm-foot-icon*/
-.hm-foot-icon {
-   
-}
+
 .hm-foot-icon ul li{
     display: inline-block;
 }
@@ -1089,6 +1083,14 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 /* ============= publications ============= */
 
+.publications {
+    padding: 50px 0 50px;
+}
+
+.certification {
+    padding: 50px 0 50px;
+}
+
 .dropdown-toggle {
     width: 100%;
     padding: 30px;  /* Increased height */
@@ -1294,4 +1296,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
   .dropdown-menu a {
     pointer-events: auto;
+  }
+
+  .websitelink {
+    color: white;
+  }
+
+  .websitelink:hover {
+    color: #4287f5
   }
