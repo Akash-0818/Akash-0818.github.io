@@ -40,6 +40,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
         
+		<!--d3.js-->
+		<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
         
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
@@ -382,7 +384,20 @@
 								</div>
 							</div>
 						</div><!-- /.row -->
-					</div>	<!-- /.container -->		
+					</div>	<!-- /.container -->
+					<div id="skillscontainer">
+						<svg id="viz"></svg>
+					</div>
+				
+					<div id="checkboxes">
+						<label><input type="checkbox" value="Category A" checked> Category A</label>
+						<label><input type="checkbox" value="Category B" checked> Category B</label>
+						<label><input type="checkbox" value="Category C" checked> Category C</label>
+						<label><input type="checkbox" value="Category D" checked> Category D</label>
+						<label><input type="checkbox" value="Category E" checked> Category E</label>
+					</div>
+				
+					<script type="text/javascript" src="assets/js/skillscript.js"></script>		
 				</div><!-- /.skill-content-->
 
 		</section><!--/.skills-->
