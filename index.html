@@ -389,15 +389,55 @@
 						<svg id="viz"></svg>
 					</div>
 				
-					<div id="checkboxes">
-						<label><input type="checkbox" value="Category A" checked> Category A</label>
-						<label><input type="checkbox" value="Category B" checked> Category B</label>
-						<label><input type="checkbox" value="Category C" checked> Category C</label>
-						<label><input type="checkbox" value="Category D" checked> Category D</label>
-						<label><input type="checkbox" value="Category E" checked> Category E</label>
+					<div id="checkboxes" class="checkboxes">
+						<label><input type="checkbox" value="C1" checked> Data Science & ML</label>
+						<label><input type="checkbox" value="C2" checked> Programming Languages</label>
+						<label><input type="checkbox" value="C3" checked> Databases</label>
+						<label><input type="checkbox" value="C4" checked> Framework & Tools</label>
+						<label><input type="checkbox" value="C5" checked> Cloud Services</label>
+						<label><input type="checkbox" value="C6" checked> Big Data</label>
+					</div>
+
+					<div id="selector_checkboxes" class="selector_checkboxes">
+						<label><input type="checkbox" value="selectall">Select All</label>
+						<label><input type="checkbox" value="deselectall">Deselect All</label>
 					</div>
 				
-					<script type="text/javascript" src="assets/js/skillscript.js"></script>		
+						
+					
+					<script type="text/javascript">
+
+						const chckbxs = document.querySelectorAll('#checkboxes input[type="checkbox"]');
+						const selector_checkedbox = document.querySelector('input[value="selectall"]');
+						const deselector_checkedbox = document.querySelector('input[value="deselectall"]');
+						
+						selector_checkedbox.addEventListener('change', () => {
+							if (selector_checkedbox.checked) {
+								deselector_checkedbox.checked = false;
+								for(let i=0; i<chckbxs.length; i++) 
+								{
+									chckbxs[i].checked = true;
+									chckbxs[i].dispatchEvent(new Event('change'));
+								}
+							}
+							
+						});
+
+						deselector_checkedbox.addEventListener('change', () => {
+							if (deselector_checkedbox.checked) {
+								selector_checkedbox.checked = false;
+								for(let i=0; i<chckbxs.length; i++) 
+								{
+									chckbxs[i].checked = false;
+									chckbxs[i].dispatchEvent(new Event('change'));
+								}
+							}
+						});
+
+
+					</script>
+
+					<script type="text/javascript" src="assets/js/skillscript.js"></script>
 				</div><!-- /.skill-content-->
 
 		</section><!--/.skills-->

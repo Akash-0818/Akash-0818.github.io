@@ -1306,11 +1306,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     color: #4287f5
   }
 
+
   /* skills */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
 
 #skillscontainer {
     width: calc(100% - 100px);
@@ -1322,7 +1319,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 svg {
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
@@ -1331,6 +1328,18 @@ svg {
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+
+#selector_checkboxes {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;   
+}
+
+#selector_checkboxes > label {
+    margin-top: 20px;
+    font-size: 12px;
 }
 
 label {
